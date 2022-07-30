@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>简单讲两句</title>
     <style>
-      body {
+      ul {
+        list-style-type: none;
         margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #ddd;
+      }
+
+      li a.active {
+        color: white;
+        background-color: #4caf50;
       }
     </style>
   </head>
@@ -15,6 +41,13 @@
     <div style="background-color: aliceblue; text-align: center; padding: 40px">
       <img src="https://s1.328888.xyz/2022/07/30/FjVGw.th.jpg" alt="头像" />
     </div>
+
+    <ul>
+      <li><a class="active" href="#home">主页</a></li>
+      <li><a href="#blog">日志</a></li>
+      <li><a href="#contact">联系</a></li>
+      <li><a href="#about">关于</a></li>
+    </ul>
 
     <div
       style="
@@ -26,11 +59,22 @@
       "
     >
       <p align="center">那我就简单讲两句</p>
-      <p align="center">
-        <font size="10" color="green">
-          <a href="https://b23.tv/3y2xZpH">看房链接，谢绝入内</a>
-        </font>
-      </p>
+
+      <div
+        style="
+          background-color: #bfedf2d7;
+          text-align: center;
+          padding: 40px;
+          font-size: 12px;
+        "
+      >
+        <p align="center">
+          <font size="10" color="green">
+            <a href="https://b23.tv/3y2xZpH" id="house">看房链接，谢绝入内</a>
+          </font>
+        </p>
+      </div>
+
       <p align="center">第二句</p>
       <p align="center">完毕</p>
     </div>
